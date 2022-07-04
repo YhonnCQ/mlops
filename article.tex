@@ -39,7 +39,7 @@
 \pagestyle{fancy} 
 \fancyhead{} 
 \fancyfoot{} 
-\fancyhead[C]{Lorem Ipsum \today} 
+\fancyhead[C]{Machine Learning Operations \today} 
 \fancyfoot[RO,LE]{\thepage} 
 
 
@@ -54,11 +54,15 @@
 
 \pretitle{\begin{center}\Huge\bfseries} 
 \posttitle{\end{center}} 
-\title{Lorem Ipsum} 
+\title{Machine Learning Operations} 
 \author{
-	LastName1, FirstName1\\
+	Valdivia Guzman, Alejandra Maria\\
 	\and
-	LastName2, FirstName2\\
+	Pazos Alarcón, Christian Joshua\\
+	\and
+	Farfan Colque, Mathius Omar\\
+	\and
+	Condori Quispe, Yhónn Joel\\
 }
 \date{\today} 
 \renewcommand{\maketitlehookd}{
@@ -88,7 +92,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus 
 \section{Introduction}
 
 \lettrine[nindent=0em,lines=3]{L}orem ipsum dolor sit amet, consectetur adipiscing elit.
-Morbi vulputate tempus molestie\cite{texbook}.
+Morbi vulputate tempus molestie.
 
 %----------------------------------------------------------------------------------------
 %	State of Art
@@ -96,14 +100,75 @@ Morbi vulputate tempus molestie\cite{texbook}.
 
 \section{State of Art}
 
-\subsection{Lorem ipsum dolor sit amet}
+\subsection{Concept}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie\cite{latex:companion}.
+Machine Learning Operations, is an extension of the DevOps methodology that seeks to include the
+machine learning and data science processes in the development and operations to make ML development
+more reliable and productive\cite{pcmlops}. .
+
+\subsection{Objective}
+
+The goal of MLOps is develop, train and deploy ML models with automated procedures that integrate
+data, developers, security and infrastructure teams\cite{pcmlops}. .
+
+\subsection{Importance of MLOps}
+
+We are in a data-driven world. The importance of the MLOps models is that they are vital to streamline
+the maduration process of AI and ML projects within an organization.
+
+The use of trained models has changed dramatically in the last decade, and now the policy of managing
+ML models like ‘black boxes’ that they held in the traditional operations is no longer sufficient. Models
+are updated and mantained. It’s therefore vital that the effort and time to deploy and maintain them are
+reduced as much as possible\cite{pcmlops}.
+
+\subsection{MLOps pipeline}
+
+While there are several attempts to capture and describe MLOps, the one that is best known is the proposal
+of ToughWorks\cite{multimlops}, which automates the life cycle of end-to-end Machine Learning applications. Collection,
+selection and preparation of data to be used in model training, in finding and selecting the most efficient
+model after testing and experimenting with different models, in developing and sending the selected model
+in production\cite{symeonidis2022mlops}. 
 
 \begin{center}
-	\includegraphics[width=7cm]{./images/latex-logo} 
+	\includegraphics[width=7cm]{./images/mlops-pipeline} 
 \end{center}
+
+\subsection{Maturity Levels}
+
+Depending on the level of automation of a MLOps system, it can be classified at a corresponding level.
+These levels were named by the community maturity levels. Although there is no universal maturity
+model, the two main ones were created by Google and Microsoft\cite{symeonidis2022mlops}. 
+
+Google model consists of three levels\cite{googlemlops}.
+
+\begin{itemize}	
 	
+	\item MLOps Level 0: Manual process.
+	\item MLOps Level 1: ML pipeline automation.
+	\item MLOps Level 2: CI/CD pipeline automation.
+	
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=7cm]{./images/mlops-google} 
+\end{center}
+
+Microsoft model consists of five levels\cite{microsoftmlops}.
+
+\begin{itemize}	
+	
+	\item MLOps Level 1: No MLOps.
+	\item MLOps Level 2: DevOps but no MLOps.
+	\item MLOps Level 3: Automated Training.
+	\item MLOps Level 4: Automated Model Deployment.
+	\item MLOps Level 5: Full MLOps Automated Operations.
+	
+\end{itemize}
+
+\begin{center}
+	\includegraphics[width=7cm]{./images/mlops-microsoft} 
+\end{center}
+
 %----------------------------------------------------------------------------------------
 %	Conclusions
 %----------------------------------------------------------------------------------------
